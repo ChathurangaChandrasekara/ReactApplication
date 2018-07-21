@@ -15,6 +15,10 @@ class App extends Component {
   
   <button type="submit" className="btn btn-default">Search</button>
 </form>
+<ul>
+<li> Kandy </li>
+<li> Colombo </li>
+  </ul>
        </div>
        <div className="col-lg-4">
        <h1 className="form-control">Saved place </h1>
