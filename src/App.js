@@ -5,14 +5,20 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="container">
+       <div className="col-lg-8">
+       <form >
+  <div className="form-group">
+    <label htmlFor="email">Search Place</label>
+    <input type="text" className="form-control" id="email"/>
+  </div>
+  
+  <button type="submit" className="btn btn-default">Search</button>
+</form>
+       </div>
+       <div className="col-lg-4">
+       <h1 className="form-control">Saved place </h1>
+       </div>
       </div>
     );
   }
