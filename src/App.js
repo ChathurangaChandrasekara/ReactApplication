@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Search from './Component/Search'
-import ResultList from './Component/ResultList'
+import Search from './Component/Search';
+import ResultList from './Component/ResultList';
+import SlidList from './Component/SlidList';
 class App extends Component {
   render() {
     return (
@@ -12,7 +13,7 @@ class App extends Component {
        <ResultList/>
        </div>
        <div className="col-lg-4">
-       <h1 className="form-control">Saved place </h1>
+       <SlidList/>
        </div>
       </div>
     );
