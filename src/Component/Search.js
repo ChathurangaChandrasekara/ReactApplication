@@ -3,13 +3,14 @@ import axios from 'axios';
 class Search extends Component{
 
  SearchHadelar = (e) => {
+   const update = this.props;
 e.preventDefault();
 const keyType = this.refs.inputword.value;
 axios.post('http://localhost:3001/getLocation', {
   City : keyType
 })
 .then(function (response) {
-  console.log(response);
+  update.callUpdate(response.data.data);
 })
 .catch(function (error) {
   console.log(error);
