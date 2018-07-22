@@ -5,9 +5,8 @@ class Search extends Component{
  SearchHadelar = (e) => {
 e.preventDefault();
 const keyType = this.refs.inputword.value;
-axios.post('/user', {
-  firstName: 'Fred',
-  lastName: 'Flintstone'
+axios.post('http://localhost:3001/getLocation', {
+  City : keyType
 })
 .then(function (response) {
   console.log(response);
