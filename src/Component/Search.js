@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 class Search extends Component{
 
  SearchHadelar = (e) => {
 e.preventDefault();
-console.log("clicked");
 const keyType = this.refs.inputword.value;
-console.log(keyType);
+axios.post('/user', {
+  firstName: 'Fred',
+  lastName: 'Flintstone'
+})
+.then(function (response) {
+  console.log(response);
+})
+.catch(function (error) {
+  console.log(error);
+});
+
  }   
 
 render(){
